@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>冰淇凌</title>	
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+
+<div id="container">
+ 
+  <div id="header">
+  	<p>	<img style="width: 900px; height: 220px;" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3742940704,109295871&fm=15&gp=0.jpg"></p>
+  	<div id="icon-list">
+  	   <img src="images/1.bmp">
+  	   <img src="images/2.bmp">
+  	   <img src="images/3.bmp">
+  	   <img src="images/4.bmp">
+  	   <style>
+  	   	*{
+	margin: 0;
+	padding: 0;
+}
+body { 
+	font-family:"微软雅黑"; 
+	font-size:16px; 
+	color: #673929;
+}
+#container {
+	margin:0 auto; 
+	width:900px; 	
+}
+#header { 
+	height:220px;/*必须添加，否则header下面有10px而不是5px空白*/
+	margin-bottom:5px;
+	position:relative; /*父层定位*/
+}
+
+#icon-list{
+	position:absolute;/*子层定位*/
+	top:170px;
+	right: 30px;
+	width: 130px;
+	height: 30px;	
+	font-size: 0px;
+	/*background: white;*/
+}
+#icon-list img{
+	margin-left:5px;
+}
+#nav{ 
+	height:30px;	
+	margin-bottom:5px;
+	background:#09c; 		
+	font: 18px/30px 微软雅黑;
+	color: #fff;
+	letter-spacing: 2px;
+    text-align: center;
+}
+a:link{
+	color: #fff;
+	text-decoration: none;
+}
+a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	color: yellow;
+	text-decoration: none;
+}
+a:active{
+	color: #fff;
+	text-decoration: none;
+}
+#main{ 
+	background:red; 
+	/*margin-bottom:5px;已经坍缩为0,放在子容器内设置*/
+}
+#aside { 
+	float:left; 
+	width:300px; 
+	background:#6cf;
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+}
+#aside h2{
+	margin: 20px;
+}
+#imglist{
+	width: 130px;
+	margin: 0 auto; 		
+}
+.polaroid
+{
+	width:85px;		
+	padding: 10px;
+	background-color: #eee;
+	border:1px solid #BFBFBF;
+	box-shadow:2px 2px 4px #aaa;
+	border-radius: 5px;
+}
+
+.rotate_left
+{
+	-ms-transform:rotate(7deg); /* IE 9 */
+	-moz-transform:rotate(7deg); /* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari and Chrome */
+	-o-transform:rotate(7deg); /* Opera */
+	transform:rotate(7deg);
+}
+
+.rotate_right
+{
+	-ms-transform:rotate(-8deg); /* IE 9 */
+	-moz-transform:rotate(-8deg); /* Firefox */
+	-webkit-transform:rotate(-8deg); /* Safari and Chrome */
+	-o-transform:rotate(-8deg); /* Opera */
+	transform:rotate(-8deg);
+}
+#imglist img{
+	height: 95px;
+	width: 85px;
+	margin: 0 auto;
+	font-size: 0;
+}
+#imglist img:hover{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+#content{ 
+	float:right; 
+	width:595px; 
+	margin-bottom:5px;
+	background:#cff;
+}
+.subcont{
+	width: 570px;
+	margin: 10px auto;	
+	clear: both;
+}
+.subcont img{
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	border: 1px dashed #000;
+}
+.subcont .subtext{
+	width: 60%;
+	float: left;
+	margin: 5px;
+}
+.subcont h2{
+	margin: 5px;
+}
+.subcont p{	
+	font:16px/2em 微软雅黑;
+}
+#footer { 
+	height:60px; 
+	line-height: 60px;
+	background:#6cf;
+	clear:both; /*新加代码*/
+	margin-top: 5px;
+	text-align: center;
+}
+
+#l-fix{
+	position: fixed;
+	top:100px;
+	left:5px;
+}
+#l-fix img{
+    height: 100px;
+	width: 100px;
+}
+  	   </style>
+    </div>
+  </div>
+  
+  <div id="nav">
+  	    <p>
+			<a href="#">草莓味Strawberry</a>|
+			<a href="cook.html">西瓜味Watermelon</a>|
+			<a href="#">桃子味Peach</a>|
+			<a href="#">香蕉味Banana</a>
+			
+		</p>
+  </div>
+
+  <div id="main"> 
+	  <div id="aside">
+	  		<h2>冰淇凌</h2>
+		<table >
+		  <tr>
+		  	<th ></th>
+		    <th >草莓味<br />Strawberry flavor</th>
+		    <th >西瓜味<br />Watermelon flavor</th>
+		    <th >桃子味<br />Peach flavor</th>
+		    <th >香蕉味<br />Banana flavor</th>
+		  </tr>
+		  <tr>
+		    <th scope="row"  >大杯</th>
+		    <td>35</td>
+		    <td>35</td>
+		    <td>35</td>
+		    <td>30</td>
+		  </tr>
+		  <tr>
+		    <th scope="row"  >中杯</th>
+		    <td>30</td>
+		    <td>30</td>
+		    <td>30</td>
+		    <td >25</td>
+		  </tr>
+		  <tr>
+		    <th scope="row"  >小杯</th>
+		    <td>25</td>
+		    <td>25</td>
+		    <td>25</td>
+		    <td>20</td>
+		  </tr>
+		</table>
+		<div id="imglist">
+			<div class="polaroid rotate_left">
+				<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559213802625&di=083915e0a599e4aa38c28502c619b437&imgtype=0&src=http%3A%2F%2Fimg0.d17.cc%2Ffile%2Fupload%2F201506%2F12%2F2f30f535fadd1113c76fd039662d8bfe.JPG"  />	
+			</div>
+
+			<div class="polaroid rotate_right">
+				<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559214017306&di=be58c8688d1f928ebb003c920a83bf89&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201504%2F08%2F20150408H5449_2uPFi.thumb.224_0.jpeg"  />	
+			</div>
+			<div class="polaroid rotate_left">
+				<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559808835&di=400831076d4d26bad89e850a691faf5f&imgtype=jpg&er=1&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201412%2F27%2F003626odw3zoaj2gqaa43j.jpg"  />	
+			</div>
+
+			<div class="polaroid rotate_right">
+				<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559214161869&di=af5516399cb6173cfa0438e13d0a2c8e&imgtype=0&src=http%3A%2F%2Fdpic.tiankong.com%2Ft2%2Fnl%2FQJ6179864439.jpg"  />	
+			</div>
+		</div>
+	  </div>
+
+	  <div id="content">
+	    <div class="subcont">		  	
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559217188612&di=127dda992f0751bad3ee6ba5bf60ac87&imgtype=0&src=http%3A%2F%2Fphotocdn.sohu.com%2F20130809%2FImg383812965.jpg" alt="">
+			<div class="subtext">
+				<h2>牛奶味</h2>
+				<p>1.牛奶煮沸<br>2.稍凉后，边搅边拌倒入已经搅匀的蛋黄。<br>3.搅匀后，若没有形成粘稠状，可以调至小火，边加热边搅拌。直到奶糊状。<br>4.稍微凉凉以后，倒入已经融化的黄油，搅拌。搅匀后，放入冰箱里<br>5.自制牛奶冰淇凌的做法图解55.半个小时候搅拌一次。再过1-2个小时，看一下，若已成固体，再搅拌一下。直到成为半稠半固状就可以食用啦。</p>
+			</div>
+		</div>	
+		<div class="subcont">
+			<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=34106771,2368883299&fm=15&gp=0.jpg" alt="">
+			<div class="subtext">
+					<h2>奶香草莓味</h2>
+				<p>1.先把草莓清洗干净，去蒂，控干水分。<br>2.用少量水把淀粉调开，然后把剩下的原料都加到奶锅中煮至冒泡，要不停搅拌，直到变得浓稠。<br>奶煮到细软这样的状态就可以用了。<br>4.模具中垫油纸，先倒一层奶糊，依次摆上草莓，再倒上一层奶糊把草莓盖住，放入冰箱冷藏一夜就ok了。<br>简单、易做、超好吃！</p>
+			</div>
+		</div>
+		<div class="subcont">	
+			<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=847919627,1961449731&fm=15&gp=0.jpg" alt="">
+			<div class="subtext">
+				<h2>芒果味</h2>
+				<p>1.芒果取肉切粒，装进料理机杯。<br>2.打成果泥备用。<br>3.蛋黄与牛奶混合。<br>4.用手动打蛋器搅拌均匀。<br>5.慢火煮热牛奶蛋液，一边煮一边搅匀，刚煮沸即关火，装碗晾凉。<br>6.奶油里加入白糖。<br>7.电动打蛋器打至七成发。<br>8.芒果泥倒进牛奶鸡蛋液里，搅拌均匀成芒果糊。<br>9.把芒果糊倒进奶油里。<br>10.翻拌均匀。<br>11.倒进容器里，放冰箱冷冻三小时。<br>12.从冰箱取出，用电动打蛋器全部搅拌起来，放回冰箱冷冻。<br>13.一小时后再取出，用刮刀翻拌均匀，此步骤每隔一小时进行一次，一共做三次。<br>14.以上步骤做到最后一次时，翻拌完后摊平，放回冰箱冷冻3小时即可。<br>15.用冰淇淋挖球器挖出，装在甜品器皿里，开吃</p>
+			</div>
+		</div>
+		<div class="subcont">
+			<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=418208707,1244212181&fm=26&gp=0.jpg" alt="">	
+			<div class="subtext">			
+				<h2>本人建议</h2>
+				<p>可以适当得吃点冰激凌，但一定要少量，不然胖子越来越胖，瘦子越来越瘦，降低食欲，不想吃饭，可不要怪我没有提醒你。</p>
+			</div>
+		</div>
+	  </div>
+  </div>
+
+  <div id="footer">
+  	<p>冰淇凌</p>
+  </div>
+</div>
+
+<div id="l-fix">
+  	<p>	<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559212765045&di=fd8eb98c6ec1e2abb919ff4bca3bd448&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F6550703f7920da8af0b3838a9e2e0084662787b86a2af-3n04hJ_fw658"></p>	
+</div>
+
+</body>
+</html>
